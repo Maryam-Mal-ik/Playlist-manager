@@ -1,0 +1,32 @@
+#include "pch.h"
+#include <iostream>
+#include<string.h>
+#include "proj5_playlist.h"
+int main()
+{
+	bool b;
+	int size;
+	playlist p1;
+	char song1[20];
+	char artist[20];
+	cout << "Enter a song:" << endl;
+	cin >> song1;
+	cout << "Enter atrist:" << endl;
+	cin >> artist;
+	Song s1(song1, artist);
+	cout << "Enter a song:" << endl;
+	cin >> song1;
+	cout << "Enter atrist:" << endl;
+	cin >> artist;
+	Song s2(song1, artist);
+	cout << "Enter a song:" << endl;
+	cin >> song1;
+	cout << "Enter atrist:" << endl;
+	cin >> artist;
+	Song s3(song1,artist);
+  p1.addsong(s1);
+	p1.addsong(s2);
+	p1.addsong(s3);
+		p1.showall();
+	}
+  
