@@ -149,10 +149,10 @@ void playlist::showstatus() const
 	cout << "The index of current of song = " << index << endl;
 }
 
-playlist operator+(const Song & s)
+playlist operator+(const Song & h)
 {
 	playlist plist;
-	plist.addsong(s);
+	plist.addsong(h);
 	return plist;
 }
 
