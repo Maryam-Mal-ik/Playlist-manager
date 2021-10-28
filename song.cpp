@@ -36,7 +36,7 @@ void Song::Set(const char* t, const char* a)
 // output operator
 ostream& operator<<(ostream& os, const Song& song)
 {
-	os << song.title << ", " << song.artist;
+	os << song.title << ",,, " << song.artist;
 
 	return os;
 }
